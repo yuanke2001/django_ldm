@@ -1,0 +1,124 @@
+.nav{
+    display: flex;
+    background-color: #82a4e1;
+    width: 100%;
+    height: 5vh;
+}
+/*.content{*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*}*/
+/*.content_left{*/
+/*    width: 70vw;*/
+/*    height: 70vh;*/
+/*    background-color: #82a4e1;*/
+/*}*/
+/*.content_right{*/
+/*    width: 30vw;*/
+/*    height: 70vh;*/
+/*    background-color:black;*/
+/*}*/
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+}
+.left_nav{
+    width: 10%;
+    height: 100%;
+    background-color:#82a4e1 ;
+}
+.content{
+    /*text-align: center;*/
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    background-color:#82a4e1 ;
+
+}
+.right_nav{
+
+    width: 10%;
+    height: 100%;
+    background-color: #82a4e1;
+}
+.top_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    height: 10%;
+}
+.image_content{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color:darkgray;
+    /*justify-content: center; !* 水平居中 *!*/
+    align-items: center; /* 垂直居中 */
+    justify-content: space-around;
+}
+.bottom_content{
+    width: 100%;
+    height: 20%;
+    /*background-color:wheat;*/
+}
+/*.text_input{*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+.form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.text_in{
+    width: 50%;
+    height: 30%;
+    border: 1px black solid;
+    background: white;
+    box-sizing:border-box;
+    font-size: 24px; /* 设置文本大小为16像素 */
+
+}
+.btn_gen{
+    width: 10%;
+    height: 30%;
+    /*border: 0px;*/
+    /*background-color: gray;*/
+    box-sizing:border-box;
+}
+.logout{
+     margin-left: auto;
+
+}
+.logout button{
+
+    /*z-index: 999; !* 可根据需要调整图标的层叠顺序 *!*/
+    /*top: 0.5%;*/
+    /*right: 5%;*/
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 24px;
+    /*padding: 2vh;*/
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.image_content img {
+  width: 256px; /* 让图片宽度铺满父元素 */
+  height: 256px; /* 让图片高度铺满父元素 */
+  object-fit: cover; /* 使用 cover 属性确保图片不会被拉伸变形 */
+}
+.wait{
+    font-size: 50px;
+}
+

@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <div class="video-box">
+        <a href="/">
+            <img class = "image" src="{% static 'image/image.png' %}">
+        </a>
+        <div class="caption">Creating image from text </div>
+
+        </form>
+        <div class="text">The latent diffusion model
+            can quickly create realistic and imaginative pictures from text commands.</div>
+        <a class="btn3" href="/gen">To generate pictures</a>
+        <a class="btn1" href="/login">登录</a>
+        <a class="btn2" href="/register">注册</a>
+        <video class="video-background" preload="auto" loop playsinline autoplay src="{% static 'mp4/world.mp4' %}" tabindex="-1" muted="muted"></video>
+    </div>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+     <meta charset="UTF-8">
+     <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+
+</head>
+<body>
+    <div class="video-box">
+        <a href="/">
+            <img class = "image" src="{% static 'image/image.png' %}">
+        </a>
+
+        <form class="login-wrapper" method="post">
+             {% csrf_token %}
+            <div class="header">sign up</div>
+                <input type="text" name="username" placeholder="username" class="input-item">
+                <input type="password" name="password" placeholder="password" class="input-item">
+                <input type="password" name="confirm_password" placeholder="Confirm your password" class="input-item">
+                <button class="btn" type="submit">sign up</button>
+                <div class="ero">{{ error_message}}</div>
+        </form>
+        <video class="video-background" preload="auto" loop playsinline autoplay src="{% static 'mp4/world.mp4' %}" tabindex="-1" muted="muted"></video>
+    </div>
+
+    <script src="{% static "js/login.js" %}"></script>
+    <script>
+        {# var errorMessage = "{{ error_message }}";#}
+        {#// 如果错误消息存在，则显示弹窗#}
+        {#if (errorMessage) {#}
+        {#    var errorPopup = document.getElementById('error-popup');#}
+        {#    errorPopup.textContent = errorMessage;#}
+        {#    errorPopup.style.display = 'block';#}
+        {#    errorPopup.style.color = 'red';#}
+    </script>
+</body>
+</html>
+
+

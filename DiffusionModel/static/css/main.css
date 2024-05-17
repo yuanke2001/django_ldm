@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+/*视频背景*/
+.video-box .video-background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*保证视频内容始终居中*/
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    /*保证视频充满屏幕*/
+    object-fit: cover;
+    min-height: 800px;
+}
+.video-background {
+    position: relative;
+    z-index: 1;
+}
+.video-box {
+    position: relative;
+    height: 100vh;
+    background-color: #C1CFF7;
+    /*进行视频裁剪*/
+    overflow: hidden;
+}
+
+  /* 添加媒体查询以根据窗口大小自适应 */
+  /*@media (min-width: 760px) {*/
+.image {
+  position: absolute;
+  z-index: 2; /* 可根据需要调整图标的层叠顺序 */
+  top: 0.5%;
+  left: 0.5%;
+  width:5vw;
+}
+  /*}*/
+  /*@media (max-width: 760px) {*/
+  /*    .image {*/
+  /*          display: none*/
+  /*    }*/
+  /*}*/
+
+

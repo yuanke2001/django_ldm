@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生成</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/gen.css' %}">
+</head>
+<body>
+<div class="nav">
+    <a href="/">
+        <img class = "image" src="{% static 'image/image.png' %}">
+    </a>
+    <form class="logout" action="/user_logout/" method="post">
+            {% csrf_token %}
+            <button  type="submit">退出登录</button>
+    </form>
+{#    <a class="btn1" href="/user_logout">退出登录</a>#}
+</div>
+
+<div class="main">
+    <div class="left_nav"></div>
+<div class="content">
+    <div class="top_content">Welcome {{ user.username }} </div>
+{#        <div class="wait">Waiting for your text to enter</div>#}
+        <div class="image_content">
+            {% for dir in image_p %}
+            <img src="{{ dir }}">
+    {#        <button class="save-button" onclick="saveImage('img1')">保存图片</button>#}
+{#            <img src="{% static "image/samples/" %}">#}
+{#            <img src="{% static "image/samples/" %}">#}
+{#            <img src="{% static "image/samples/.png" %}">#}
+            {% endfor %}
+        </div>
+     <div class="bottom_content">
+        <form class="form" method="post">
+          {% csrf_token %}
+          <input class="text_in" type="text" name="text_input">
+          <button class="btn_gen" type="submit">生成</button>
+        </form>
+
+    </div>
+</div>
+    <div class="right_nav"></div>
+</div>
+</body>
+</html>

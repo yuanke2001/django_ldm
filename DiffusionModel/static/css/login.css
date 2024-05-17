@@ -1,0 +1,88 @@
+/*.container {*/
+/*    border: white 1px solid;*/
+/*    position: absolute;*/
+/*    width: 20%;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    z-index: 3;*/
+/*    background-color: white;*/
+/*}*/
+
+/*h1 {*/
+/*    text-align: center;*/
+/*    font-size: 30px;*/
+/*}*/
+
+/*form input {*/
+/*    width: 80%;*/
+/*    padding: 10px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*form button {*/
+/*    width: 50%;*/
+/*    padding: 10px;*/
+/*    background-color: #4CAF50;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*form button:hover {*/
+/*    background-color: #45a049;*/
+/*}*/
+
+.login-wrapper {
+    background-color: #fff;
+    width: 358px;
+    height: 588px;
+    border-radius: 15px;
+    padding: 0 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    }
+.header {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+}
+.input-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    font-size: 15px;
+    outline: none;
+}
+.input-item::placeholder {
+    text-transform:lowercase;
+}
+.btn {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+    color: #fff;
+    border: white 1px solid;
+    font-size: 24px;
+}
+.ero{
+    text-align: center;
+    color: red;
+}
+.msg {
+    text-align: center;
+    line-height: 88px;
+}
+a {
+    text-decoration-line: none;
+    color: #abc1ee;
+}
